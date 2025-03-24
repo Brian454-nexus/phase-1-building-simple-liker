@@ -9,3 +9,5 @@ const modalMessage = document.getElementById("modal-message");
 // Add click event listeners to all like-glyph hearts
 document.querySelectorAll(".like-glyph").forEach(heart => {
   heart.addEventListener("click", function() {
+    // If the heart is empty, try to "like" it
+    if (heart.innerHTML === EMPTY_HEART) {
