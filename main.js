@@ -14,3 +14,8 @@ document.querySelectorAll(".like-glyph").forEach(heart => {
        // Call the mock server to simulate a request
        mimicServerCall()
        .then(() => {
+         // Success: Fill the heart and turn it red
+         heart.innerHTML = FULL_HEART;
+         heart.classList.add("activated-heart");
+     })
+     .catch(error => {
