@@ -22,3 +22,9 @@ document.querySelectorAll(".like-glyph").forEach(heart => {
        // Failure: Show the error modal
        modalMessage.innerHTML = error; // Set the error message
        modal.classList.remove("hidden"); // Make modal visible
+       // Hide the modal after 3 seconds
+       setTimeout(() => {
+        modal.classList.add("hidden");
+    }, 3000);
+});
+}
