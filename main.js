@@ -28,3 +28,11 @@ document.querySelectorAll(".like-glyph").forEach(heart => {
     }, 3000);
 });
 }
+// If the heart is full, "unlike" it
+else if (heart.innerHTML === FULL_HEART) {
+  // Change back to empty heart and remove red color
+  heart.innerHTML = EMPTY_HEART;
+  heart.classList.remove("activated-heart");
+}
+});
+});
