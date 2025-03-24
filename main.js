@@ -19,3 +19,6 @@ document.querySelectorAll(".like-glyph").forEach(heart => {
          heart.classList.add("activated-heart");
      })
      .catch(error => {
+       // Failure: Show the error modal
+       modalMessage.innerHTML = error; // Set the error message
+       modal.classList.remove("hidden"); // Make modal visible
